@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Habit Tracker",
+    "slug": "habit-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "scheme": "habittracker",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#3B82F6"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.habittracker.app",
+      "infoPlist": {
+        "NSUserNotificationUsageDescription": "This app uses notifications to remind you about your habits",
+        "NSLocalNotificationUsageDescription": "This app uses local notifications for habit reminders"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#3B82F6",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.habittracker.app",
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "USE_EXACT_ALARM"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-notifications"
+    ],
+    "notification": {
+      "icon": "./assets/notification-icon.png",
+      "color": "#3B82F6",
+      "androidMode": "default",
+      "androidCollapsedTitle": "Habit Tracker",
+      "iosDisplayInForeground": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id"
+      }
+    }
+  }
+}
